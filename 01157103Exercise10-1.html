@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        background: #eee;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        color: #222;
+        font-size: 14px;
+        line-height: 26px;
+        padding-bottom: 50px;
+      }
+
+      .container {
+        max-width: 700px;
+        background: #fff;
+        margin: 0px auto 0px;
+        box-shadow: 1px 1px 2px #dad7d7;
+        border-radius: 3px;
+        padding: 40px;
+        margin-top: 50px;
+      }
+
+      .header {
+        margin-bottom: 30px;
+      }
+
+      .full-name {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+
+      .first-name {
+        font-weight: 700;
+      }
+
+      .last-name {
+        font-weight: 300;
+      }
+
+      .contact-info {
+        margin-bottom: 20px;
+      }
+
+      .height,
+      .age,
+      .birthday {
+        color: #999;
+        font-weight: 300;
+      }
+
+      .separator {
+        height: 10px;
+        display: inline-block;
+        border-left: 2px solid #999;
+        margin: 0px 10px;
+      }
+
+      .position {
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: underline;
+      }
+
+      .details {
+        line-height: 20px;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .section:last-of-type {
+        margin-bottom: 0px;
+      }
+
+      .section__title {
+        letter-spacing: 2px;
+        color: #54afe4;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .section__list-item {
+        margin-bottom: 40px;
+      }
+
+      .section__list-item:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .left,
+      .right {
+        vertical-align: top;
+        display: inline-block;
+      }
+
+      .left {
+        width: 60%;
+      }
+
+      .right {
+        text-align: right;
+        width: 39%;
+      }
+
+      .name {
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-style: italic;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #000;
+      }
+
+      .skills__item {
+        margin-bottom: 10px;
+      }
+
+      input {
+        display: none;
+      }
+
+      label {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #c3def3;
+        border-radius: 20px;
+        margin-right: 3px;
+      }
+
+      input:checked + label {
+        background: #79a9ce;
+      }
+    </style>
+  </head>
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <div class="container">
+      <div class="header">
+        <div class="full-name">
+          <span class="first-name">七海</span>
+          <span class="last-name">建人</span>
+        </div>
+        <div class="contact-info">
+          <span class="height">height: </span>
+          <span class="height-val">184cm</span>
+          <span class="separator"></span>
+          <span class="age">age: </span>
+          <span class="age-val">27歲</span>
+          <span class="separator"></span>
+          <span class="birthday">birthday: </span>
+          <span class="birthday-val">7月3日</span>
+        </div>
+
+        <div>
+          <img src="Nanami_Kento.jpg" width="60%" />
+        </div>
+
+        <div class="about">
+          <span class="position">Front-End Developer </span><br />
+          <span class="desc">
+            東京都立咒術高等專門學校出身的1級咒術師，五條悟的後輩，黑閃連續發生紀錄（4次）的保持者<b>已被虎杖悠仁打破</b>，早期通過人才招攬進入的高專。<br />
+            有四分之一的丹麥血統，祖父是丹麥人。 是家系中唯一的咒術師。<br />
+            時常帶著護目鏡，身著米黃色西裝，身材高大、成熟穩健的中年人<del>指28歲</del>。武器是纏著咒符的短砍刀，領帶也是用咒符製成的。<br />
+            堅守「按時下班」的原則的泰然自若的復職者，擁有直接突擊敵人弱點的洞察力和技術。可以將目標十等分，在7：3的地方強行製造弱點。<br />
+            高專畢業後曾在普通企業工作，但後來辭職回到了自己討厭的咒術界，現為自由職業咒術師。<br /><del
+              >咒術師是狗屎，社畜更是狗屎，所以勞動就是狗屎！</del
+            ><br />
+            討厭加班。可能也和他靠時間上的束縛控制咒力有關，一旦勞動時間（含中途休息）超過八小時的話，束縛就會解開，咒力將上升。<br />
+            經常持有現實而消極的態度，但也在積極地照顧著後輩。<br />
+            信任和信賴高專時代的前輩五條悟，但是並不尊敬他。<br />
+            深受五條悟的信任和豬野琢真的仰慕。<br />
+            興趣特長是獨自飲酒，討厭的食物為生麵條，壓力來源為加班我討厭加班！。<br />
+            酒量不亞於家入硝子。<br />
+          </span>
+        </div>
+      </div>
+      <div class="details">
+        <div class="section">
+          <div class="section__title">Experience</div>
+          <div class="section__list">
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">早年</div>
+                <div class="addr">
+                  東京都立咒術高等專門學校->一般金融企業->咒術師
+                </div>
+              </div>
+              <div class="right">
+                <div class="name">狗屎</div>
+                <div class="desc">
+                  畢業後入職一般金融企業暫時放棄了咒術師之路。
+                  成為上班族後步入迷茫期，在一次便利店買麵包的時候祓除了櫃檯小姐背後的咒靈，收到其感謝後從公司辭職，重新走上了咒術師之路。
+                </div>
+              </div>
+            </div>
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">幼魚與逆罰篇</div>
+                <div class="addr">一級咒術師</div>
+              </div>
+              <div class="right">
+                <div class="name">還是狗屎</div>
+                <div class="desc">
+                  受五條悟委託，帶領虎杖調查三名男學生在影院離奇死亡的案件。途中遭遇怪靈並展開戰鬥，首次展現其「七三開咒術」的能力。一邊教導虎杖一邊輕鬆取勝。
+                </div>
+              </div>
+            </div>
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">澀谷事變篇</div>
+                <div class="addr">一級咒術師</div>
+              </div>
+              <div class="right">
+                <div class="name">真男人</div>
+                <div class="desc">
+                  與禪院直毘人，釘崎野薔薇，伏黑惠一起和特級怪靈陀艮展開戰鬥。途中被其拖入領域，左眼被打中，身負重傷。
+                  擊敗陀艮後又遭遇特級咒靈漏瑚，並被其用火焰咒術秒殺，全身著火。
+                  在重傷狀態下仍堅持與地鐵站內不計其數的改造人血戰，回想起了自己曾經逃避過咒術師責任的過去。
+                  遇到真人以及虎杖，自知命不久矣，對虎杖說出」以後就交給你了「之後被真人用「無為轉變」殺死。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section__title">Education</div>
+          <div class="section__list">
+            <div class="section__list-item">
+              <div class="left">
+                <div class="name">東京都立咒術高等專門學校</div>
+                <div class="addr">東京</div>
+              </div>
+              <div class="right">
+                <div class="name">學生</div>
+                <div class="desc">
+                  七海與灰原在一次簡單任務中由於收到有關咒靈錯誤的等級信息導致灰原殉職（失去了下半身），七海傷心欲絕，畢業後入職一般金融企業暫時放棄了咒術師之路。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section__title">Quote</div>
+          <div class="section__list">
+            <div class="section__list-item">
+              <div class="name">1.</div>
+              <div class="text">“ 我討厭加班！ ”</div>
+            </div>
+
+            <div class="section__list-item">
+              <div class="name">2.</div>
+              <div class="text">
+                “
+                枕邊脫落的頭髮變多了，喜歡吃的夾心麵包從便利店消失了，這些小小的絕望堆徹起來才會讓人長大。
+                ”
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section__title">Skills</div>
+          <div class="skills">
+            <div class="skills__item">
+              <div class="left">
+                <div class="name">
+                  術式 「<a
+                    href="https://commons.moegirl.org.cn/File:%E4%B8%83%E6%B5%B7%E5%BB%BA%E4%BA%BA%E7%9A%84%E9%BB%91%E9%97%AA.jpg#/media/File:%E4%B8%83%E6%B5%B7%E5%BB%BA%E4%BA%BA%E7%9A%84%E9%BB%91%E9%97%AA.jpg"
+                    >黑閃</a
+                  >」
+                  <div class="text">
+                    在打擊與咒力造成的衝擊誤差0.000001秒之內時產生空間扭曲，七海的記錄是連續4次發動黑閃。
+                    在劇場版0百鬼夜行一戰，七海可配合十劃咒法「瓦落瓦落」同時使用，破壞力極強。
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <input id="ck1" type="checkbox" checked />
+
+                <label for="ck1"></label>
+                <input id="ck2" type="checkbox" checked />
+
+                <label for="ck2"></label>
+                <input id="ck3" type="checkbox" />
+
+                <label for="ck3"></label>
+                <input id="ck4" type="checkbox" />
+                <label for="ck4"></label>
+                <input id="ck5" type="checkbox" />
+                <label for="ck5"></label>
+              </div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="left">
+              <div class="name">
+                <a
+                  href="https://commons.moegirl.org.cn/File:%E4%B8%83%E6%B5%B7%E5%BB%BA%E4%BA%BA%E7%9A%84%E9%BB%91%E9%97%AA.jpg#/media/File:%E4%B8%83%E6%B5%B7%E5%BB%BA%E4%BA%BA%E7%9A%84%E9%BB%91%E9%97%AA.jpg"
+                  >十劃咒法「瓦落瓦落」</a
+                >
+                <div class="text">
+                  這種術式可以將目標的長度等份劃分並在7:3的點上強行製造弱點（即使比施術者強悍的對手也能造成一定傷害），只要擊中「點」就能夠觸發「暴擊」傷害，缺點是這種咒術只能用在近戰上無法遠程攻擊。
+                  可指定任意部位為攻擊目標，而且對非生物對象也同樣有效。
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <input id="ck1" type="checkbox" checked />
+
+              <label for="ck1"></label>
+              <input id="ck2" type="checkbox" checked />
+
+              <label for="ck2"></label>
+              <input id="ck3" type="checkbox" />
+
+              <label for="ck3"></label>
+              <input id="ck4" type="checkbox" />
+              <label for="ck4"></label>
+              <input id="ck5" type="checkbox" />
+              <label for="ck5"></label>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section__title">favorite food</div>
+          <div class="section__list">
+            <div class="section__list-item">麵包，西班牙蒜味蝦，酒類</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
